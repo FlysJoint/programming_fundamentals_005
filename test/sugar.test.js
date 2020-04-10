@@ -136,7 +136,7 @@ describe("Object.get", () => {
   });
 });
 
-describe.only("Object.has", () => {
+describe("Object.has", () => {
   test("returns true if the object has the give key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "name")).toBe(true);
@@ -272,7 +272,7 @@ describe("Object.addAll", () => {
   });
 });
 
-describe("Object.find", () => {
+xdescribe("Object.find", () => {
   test("returns the found value if the object contains a value that matches the matcher function", () => {
     function matcherFunc(val) {
       return val > 99;
@@ -308,7 +308,7 @@ describe("Object.find", () => {
   });
 });
 
-describe("Object.every", () => {
+xdescribe("Object.every", () => {
   test("returns true if all values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
@@ -344,7 +344,7 @@ describe("Object.every", () => {
   });
 });
 
-describe("Object.some", () => {
+xdescribe("Object.some", () => {
   test("returns true if one or more values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
